@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Alex Bar Tending Service — Elevated cocktails, exceptional price value</title>
+<link rel="stylesheet" href="styles.css" />
+<meta name="description" content="Alex Bar Tending Service — premium mobile bartending with unbeatable bottle pricing. You only pay for bottles opened." />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/logo_full.png" alt="Alex The Mobile Bartender logo" class="logo" />
+      <h1>Alex Bar Tending Service</h1>
+      <p class="tagline">Elevated cocktails, exceptional price value</p>
+    </div>
+    <nav class="top-nav">
+      <a href="#services">Services</a>
+      <a href="#booking">Book</a>
+      <a href="#about">About</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h2>Luxury bar service — without luxury price tags</h2>
+        <p class="lead">You only pay for bottles opened — unopened bottles aren’t charged and aren’t kept. Premium presentation, unbeatable bottle rates.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#booking">Request a Quote</a>
+          <a class="btn ghost" href="#services">See Services</a>
+        </div>
+        <ul class="contact-pills">
+          <li>Call: <a href="tel:+15865774368">586‑577‑4368</a></li>
+          <li>Email: <a href="mailto:Alexbartenderonwheels@gmail.com">Alexbartenderonwheels@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <img src="images/logo_mark.png" alt="Gold cocktail and shaker mark" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services container">
+    <h3>Our Services</h3>
+    <p class="intro">Three carefully curated tiers — choose the level of service that fits your event. All services include liquor (you only pay for bottles opened), professional staff, and high-end presentation.</p>
+    <div class="cards">
+      <article class="card">
+        <h4>The Essential Elite Package</h4>
+        <p class="muted">Top-level hospitality for VIP events.</p>
+        <ul>
+          <li>Professional bartending with bottle girls</li>
+          <li>5 custom cocktails</li>
+          <li>Custom logo & menu design</li>
+          <li>6 hours of service</li>
+          <li>Liquor included — you only pay for bottles opened</li>
+        </ul>
+        <p class="price-note">Contact for pricing</p>
+        <a class="btn" href="#booking">Book this</a>
+      </article>
+
+      <article class="card">
+        <h4>The Premier Value Bar Experience</h4>
+        <p class="muted">The smartest choice for value and presentation.</p>
+        <ul>
+          <li>Mobile bar setup</li>
+          <li>1 bartender</li>
+          <li>5 custom cocktails</li>
+          <li>6 hours of service</li>
+          <li>Liquor included — you only pay for bottles opened</li>
+        </ul>
+        <p class="price-note">Contact for pricing</p>
+        <a class="btn" href="#booking">Book this</a>
+      </article>
+
+      <article class="card">
+        <h4>Standard Mix & Pour Service</h4>
+        <p class="muted">Reliable, professional bartending.</p>
+        <ul>
+          <li>Standard bartending service</li>
+          <li>3 custom cocktails</li>
+          <li>Liquor included — you only pay for bottles opened</li>
+        </ul>
+        <p class="price-note">Contact for pricing</p>
+        <a class="btn" href="#booking">Book this</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h3>About Alex</h3>
+    <p>Alex Bar Tending Service delivers upscale mobile bartending with a focus on value. We combine elegant presentation, skilled bartenders, and the lowest bottle pricing — so you get a luxury experience without overspending. All unopened bottles remain the supplier's property unless opened during service.</p>
+    <p class="muted">Follow us: <a href="https://www.tiktok.com/@bartender_alex0" target="_blank">TikTok</a> • <a href="https://www.instagram.com/alex_the.mobilebartender/" target="_blank">Instagram</a></p>
+  </section>
+
+  <section id="booking" class="booking container">
+    <h3>Request a Booking / Quote</h3>
+    <p class="muted">Complete the form below and we'll respond within 24 hours. For urgent bookings call or text <a href="tel:+15865774368">586‑577‑4368</a>.</p>
+
+    <form id="bookingForm" class="form" onsubmit="submitForm(event)">
+      <div class="grid">
+        <label>
+          Your full name
+          <input type="text" name="name" id="name" required/>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" id="phone" required/>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required/>
+        </label>
+        <label>
+          Event date
+          <input type="date" name="date" id="date" required/>
+        </label>
+        <label>
+          Start time
+          <input type="time" name="time" id="time" required/>
+        </label>
+        <label>
+          Event address
+          <input type="text" name="address" id="address" required/>
+        </label>
+        <label>
+          Guest count
+          <input type="number" name="guests" id="guests" min="1" required/>
+        </label>
+        <label>
+          Select service tier
+          <select name="tier" id="tier" required>
+            <option value="">-- choose a tier --</option>
+            <option>The Essential Elite Package</option>
+            <option>The Premier Value Bar Experience</option>
+            <option>Standard Mix & Pour Service</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="full">
+        Additional notes / requests
+        <textarea name="notes" id="notes" rows="4"></textarea>
+      </label>
+
+      <p class="small muted">Note: You only pay for bottles we open. Any bottles we do not open are not charged and are not left with you.</p>
+
+      <div class="form-footer">
+        <button class="btn primary" type="submit">Send Request</button>
+        <div id="formStatus" role="status" aria-live="polite"></div>
+      </div>
+      <p class="muted small">By submitting you agree to our <a href="terms.html">Terms & Cancellation Policy</a>.</p>
+    </form>
+
+    <div class="alt-contact">
+      <h4>Prefer to call or text?</h4>
+      <p><a href="tel:+15865774368">586‑577‑4368</a> — or email <a href="mailto:Alexbartenderonwheels@gmail.com">Alexbartenderonwheels@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p>&copy; Alex Bar Tending Service — All rights reserved.</p>
+      <p class="muted">Follow: <a href="https://www.tiktok.com/@bartender_alex0" target="_blank">TikTok</a> • <a href="https://www.instagram.com/alex_the.mobilebartender/" target="_blank">Instagram</a></p>
+    </div>
+    <div class="contact">
+      <p>Phone: <a href="tel:+15865774368">586‑577‑4368</a></p>
+      <p>Email: <a href="mailto:Alexbartenderonwheels@gmail.com">Alexbartenderonwheels@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
