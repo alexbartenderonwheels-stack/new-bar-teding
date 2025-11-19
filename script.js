@@ -4,7 +4,7 @@
 // sign up for a free form endpoint on Formspree (https://formspree.io) or Netlify Forms.
 // After you create an endpoint, paste it into the variable `FORM_ENDPOINT` below.
 
-const FORM_ENDPOINT = ""; // <-- PASTE your Formspree or other endpoint URL here
+const https://formspree.io/f/mldzjoge = ""; // <-- PASTE your Formspree or other endpoint URL here
 
 function submitForm(e){
   e.preventDefault();
@@ -13,8 +13,8 @@ function submitForm(e){
   statusEl.textContent = "Sending...";
   const data = new FormData(form);
 
-  if (FORM_ENDPOINT) {
-    fetch(FORM_ENDPOINT, {
+  if (https://formspree.io/f/mldzjoge) {
+    fetch(https://formspree.io/f/mldzjoge, {
       method: 'POST',
       body: data,
       headers: { 'Accept': 'application/json' }
